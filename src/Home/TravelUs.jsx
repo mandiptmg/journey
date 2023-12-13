@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 const TravelUs = () => {
   return (
     <div className='py-44 font-[cursive] mt-10 '>
@@ -53,12 +55,11 @@ const TravelUs = () => {
         </div>
       </div>
       <div className='text-center mt-7 text-xl md:text-2xl'>
-        <a href='/tours'>
-        
+        <NavLink to='/tours'>
           <button className='bg-red-500 rounded-3xl px-7 py-3 capitalize text-white border border-red-500 hover:bg-white  font-bold hover:text-red-500'>
             view all tours
           </button>
-        </a>
+        </NavLink>
       </div>
     </div>
   )

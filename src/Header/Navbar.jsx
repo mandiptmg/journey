@@ -7,7 +7,7 @@ import { useGlobalContext } from "../Context/Context"
 const Navbar = () => {
  const [open,setOpen] = useState(false);
  const [navbar,setNavbar] = useState(false)
- const {setShowModal,showModal} = useGlobalContext()
+ const {setShowModal} = useGlobalContext()
  useEffect(()=>{
   const handleChange =()=>{
     if (window.scrollY >= 80) {

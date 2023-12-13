@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const SingleTourImage = ({
   desc,
   country,
@@ -12,13 +14,13 @@ const SingleTourImage = ({
   return (
     <article  className='bg-white h-full border font-[cursive] text-center border-gray-200 w-full rounded-lg shadow'>
       <div>
-        <a href={to}>
+        <NavLink to={to}>
           <img
             className='rounded-t-lg opacity-80 hover:opacity-100 h-auto w-full object-cover  aspect-[1/0.6]'
             src={img}
             alt={country}
           />
-        </a>
+        </NavLink>
       </div>
       <div className='p-5'>
         <div>

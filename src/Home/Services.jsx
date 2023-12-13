@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 const Services = () => {
   return (
     <div className='pt-20 font-[cursive] pb-20 w-[80vw] mx-auto'>
@@ -62,7 +63,7 @@ const Services = () => {
           <div className='w-full text-center px-10'>
             <h1 className='text-xl text-gray-400 '>Learn more about us </h1>
             <button className='text-3xl font-bold font-sans  mb-7 md:mb-0   bg-red-600 text-white rounded-full py-2  text-center mt-10 w-full  '>
-              <a href='/about us'>About Us</a>
+              <NavLink to='/about us'>About Us</NavLink>
             </button>
           </div>
         </div>
@@ -72,7 +73,3 @@ const Services = () => {
 }
 
 export default Services
-
-
-
-
