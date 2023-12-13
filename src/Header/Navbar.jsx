@@ -35,7 +35,7 @@ const Navbar = () => {
       <nav className='items-center  h-20 px-7 md:px-28 mx-auto justify-between flex'>
         <div>
           <h1 className='font-bold text-red-500 text-2xl'>
-            <NavLink className='active' to='/'>
+            <NavLink onClick={()=>setOpen(false)} className='active' to='/'>
               Journey
             </NavLink>
           </h1>
@@ -98,17 +98,17 @@ const Navbar = () => {
         <div>
           <ul className='flex py-4 justify-center flex-col gap-4 items-center'>
             <li>
-              <NavLink className='active' to='/tours'>
+              <NavLink onClick={()=>setOpen(false)} className='active' to='/tours'>
                 Tours
               </NavLink>
             </li>
             <li>
-              <NavLink className='active' to='/About us'>
+              <NavLink onClick={()=>setOpen(false)} className='active' to='/About us'>
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink className='active' to='/contact us'>
+              <NavLink onClick={()=>setOpen(false)} className='active' to='/contact us'>
                 Contact US
               </NavLink>
             </li>

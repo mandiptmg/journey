@@ -17,7 +17,7 @@ const Tour = () => {
           <p className='pt-10 md:text-lg'>Journey Beyond Imagination</p>
         </div>
       </div>
-      <div className='text-center max-w-md md:max-w-lg mx-auto'>
+      <div className='text-center w-[90vw] md:max-w-lg mx-auto'>
         <button
           onClick={() => setShowModal(true)}
           className='flex justify-between items-center rounded-3xl border outline-none  w-full py-2 px-4'
@@ -33,7 +33,7 @@ const Tour = () => {
           })
          }
       </div>
-      <div>
+      <div className='w-[90vw] mx-auto '>
         <Newsletter />
       </div>
       <div className='mx-auto max-w-3xl'>

@@ -1,8 +1,8 @@
 
 const Newsletter = () => {
   return (
-    <div>
-      <div className='border mt-24  shadow shadow-red-200 '>
+    <div className="w-[90vw] mx-auto">
+      <div className='mt-24'>
         <div className='text-center py-24 max-w-2xl mx-auto font-[cursive]'>
           <div>
             <h1 className='text-red-500 md:text-4xl text-3xl  font-bold '>
