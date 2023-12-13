@@ -12,7 +12,7 @@ const Contact = () => {
               feedback you may have.
             </p>
           </div>
-          <div className='mt-10 max-w-md md:max-w-3xl mx-auto'>
+          <div className='mt-10 w-[90vw] md:max-w-3xl mx-auto'>
             <form action=''>
               <div className='flex gap-4 items-center'>
                 <input

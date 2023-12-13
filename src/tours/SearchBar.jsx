@@ -1,9 +1,12 @@
 // SearchFilterComponent.js
 import  { useState } from 'react';
 import {FaSearch} from 'react-icons/fa'
+import { NavLink } from 'react-router-dom';
+import { useGlobalContext } from '../Context/Context';
 
 const SearchFilterComponent = ({ data }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const {setShowModal} = useGlobalContext()
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -31,12 +34,12 @@ const SearchFilterComponent = ({ data }) => {
             <div className='text-gray-400 text-center py-4'>No Result</div>
           ) : (
             filteredData.map((item, index) => (
-              <a key={index} href={item.to}>
+              <NavLink onClick={()=>setShowModal(false)} key={index} to={item.to}>
                 <ul className='text-left border-t px-4 py-3'>
                   <li className='text-base text-black/70'>{item.desc}</li>
                   <li className='text-xs text-gray-400'>/tour/{item.visit}</li>
                 </ul>
-              </a>
+              </NavLink>
             ))
           )
         ) : // Display nothing when the search term is empty

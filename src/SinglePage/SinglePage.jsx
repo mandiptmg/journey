@@ -31,10 +31,10 @@ const SinglePage = ({ data }) => {
             <h1 className='md:text-xl inline-block text-lg capitalize rounded-full px-10 py-2 bg-white text-red-500 font-semibold'>
               special offer
             </h1>
-            <p className='text-red-500 text-5xl md:text-6xl font-mono leading-normal'>
+            <p className='text-red-500 text-xl md:text-6xl font-mono leading-normal'>
               {tour.desc}
             </p>
-            <p className='md:text-lg font-medium text-sm text-black/80 max-w-3xl mx-auto'>
+            <p className='text-lg font-medium text-black/80 max-w-3xl mx-auto'>
               Embark on an extraordinary journey through the land of fire and
               ice, as you explore the breathtaking landscapes, natural wonders,
               and unique culture of Iceland.
