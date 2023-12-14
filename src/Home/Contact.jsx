@@ -12,7 +12,10 @@ const Contact = () => {
             book a private tour
           </p>
         </div>
-        <div className='bg-white shadow-lg p-8 rounded-xl w-full md:w-1/2 lg:w-1/3'>
+        <div
+          data-aos='zoom-in'
+          className='bg-white shadow-lg p-8 rounded-xl w-full md:w-1/2 lg:w-1/3'
+        >
           <form className='space-y-4'>
             <div>
               <label htmlFor='name' className='block mb-1'>
@@ -62,7 +65,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-     
     </div>
   )
 }

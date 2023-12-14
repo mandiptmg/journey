@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useGlobalContext } from '../Context/Context'
 import { NavLink } from 'react-router-dom'
 
-const SingleImage = ({ img, country, to }) => {
+const SingleImage = ({ img, country, to,aos }) => {
   const [show, setShow] = useState(true)
   const { setBackgroundImage, backgroundImage,setActiveButton,activeButton} = useGlobalContext()
   return (
@@ -26,6 +26,7 @@ const SingleImage = ({ img, country, to }) => {
               img: img,
               country: country,
               to: to,
+              aos:aos
             })
             setActiveButton(country)
           }}

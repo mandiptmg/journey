@@ -12,10 +12,9 @@ const Contact = () => {
             filled with the spirit of discovery.
           </p>
         </div>
-        <div className='rounded-xl w-full'>
-          <form className='space-y-4'>
-            <div className="flex  items-center gap-7">
-              
+        <div data-aos='zoom-in' className='rounded-xl w-full'>
+          <form data-aos='zoom-in' className='space-y-4'>
+            <div className='flex  items-center gap-7'>
               <input
                 type='text'
                 id='name'
@@ -24,8 +23,7 @@ const Contact = () => {
                 placeholder='Your Name'
                 required
               />
-           
-             
+
               <input
                 type='email'
                 id='email'
@@ -36,7 +34,6 @@ const Contact = () => {
               />
             </div>
             <div>
-              
               <textarea
                 id='message'
                 name='message'

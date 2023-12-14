@@ -18,6 +18,7 @@ const Testimonials = () => {
               const { img, name, country, info } = item
               return (
                 <article
+                  data-aos='zoom-in'
                   className='text-center max-w-xl mx-2 h-[450px] space-y-7  p-4 rounded-3xl border bg-white'
                   key={index}
                 >

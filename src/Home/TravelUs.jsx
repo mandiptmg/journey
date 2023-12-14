@@ -13,7 +13,7 @@ const TravelUs = () => {
         </p>
       </div>
       <div className='md:grid flex flex-col-reverse mt-10 gap-10 grid-cols-[1fr,2fr]'>
-        <div>
+        <div data-aos='zoom-in'>
           <div className='text-center shadow-red-200 text-[cursive]  p-7 text-3xl shadow-md rounded-2xl'>
             <h1 className='text-red-500 font-bold '>
               5 years{' '}
@@ -39,7 +39,7 @@ const TravelUs = () => {
             </h1>
           </div>
         </div>
-        <div className='aspect-w-16 aspect-h-9'>
+        <div data-aos='zoom-in' className='aspect-w-16 aspect-h-9'>
           <video
             autoPlay
             loop
@@ -55,7 +55,7 @@ const TravelUs = () => {
         </div>
       </div>
       <div className='text-center mt-7 text-xl md:text-2xl'>
-        <NavLink to='/tours'>
+        <NavLink data-aos='zoom-in' to='/tours'>
           <button className='bg-red-500 rounded-3xl px-7 py-3 capitalize text-white border border-red-500 hover:bg-white  font-bold hover:text-red-500'>
             view all tours
           </button>

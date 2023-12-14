@@ -1,7 +1,7 @@
 
 const Newsletter = () => {
   return (
-    <div className="w-[90vw] mx-auto">
+    <div className='w-[90vw] mx-auto'>
       <div className='mt-24'>
         <div className='text-center py-24 max-w-2xl mx-auto font-[cursive]'>
           <div>
@@ -14,12 +14,14 @@ const Newsletter = () => {
           </div>
           <div className='container mx-auto items-center gap-4 grid md:flex  mt-14 '>
             <input
+              data-aos='fade-right'
               type='email'
               placeholder='123@email.com'
               className='p-4 w-full outline-none rounded-full bg-gray-200'
               required
             />
             <button
+              data-aos='fade-left'
               type='submit'
               className='bg-red-500 px-6 py-4 w-full md:w-auto  rounded-3xl hover:bg-red-600 text-white'
             >

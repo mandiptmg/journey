@@ -40,12 +40,18 @@ const Team = () => {
       </div>
       <div className="py-20 md:max-w-5xl flex-wrap mx-auto font-[cursive] grid md:flex items-center gap-7 justify-center">
        {data.map((item,index)=>{
-        return(
-         <article key={index} className="text-center">
-          <img src={item.img} alt="" className="w-[200px] mx-auto h-[200px] object-cover rounded-full" />
-          <h1 className="text-xl capitalize text-red-500 font-semibold">{item.name}</h1>
-          <p className="text-gray-400">{item.position}</p>
-         </article>
+        return (
+          <article data-aos='zoom-in' key={index} className='text-center'>
+            <img
+              src={item.img}
+              alt=''
+              className='w-[200px] mx-auto h-[200px] object-cover rounded-full'
+            />
+            <h1 className='text-xl capitalize text-red-500 font-semibold'>
+              {item.name}
+            </h1>
+            <p className='text-gray-400'>{item.position}</p>
+          </article>
         )
        })}
       </div>

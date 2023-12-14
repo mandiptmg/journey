@@ -5,7 +5,7 @@ const SingleQuestion = ({question,ans}) => {
  const [show, setShow] = useState(false)
   return (
     <div>
-      <article className='mb-10'>
+      <article data-aos='zoom-in' className='mb-10'>
         <div className='flex items-center justify-between border-b pb-2'>
           <h1 className='text-red-500 font-semibold md:text-3xl   w-full'>
             {question}

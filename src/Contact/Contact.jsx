@@ -3,7 +3,7 @@ import Faq from "./Faq"
 const Contact = () => {
   return (
     <div className='relative'>
-      <div className=' before:absolute before:-top-20 before:-z-10 before:left-0 before:w-full before:h-[150vh]  before:bg-blend-overlay before:bg-white/80 before:bg-cover before:bg-no-repeat before:bg-[url(https://img.freepik.com/free-photo/compass-near-old-maps_23-2147793492.jpg?w=826&t=st=1702027206~exp=1702027806~hmac=3a4e2149fdcb655e119f0676db7fc5dec4e64ff08da1976dde14ff049f705c2e)]  bg-gradient-to-b from-transparent to-white' >
+      <div className=' before:absolute before:-top-20 before:-z-10 before:left-0 before:w-full before:h-[150vh]  before:bg-blend-overlay before:bg-white/80 before:bg-cover before:bg-no-repeat before:bg-[url(https://img.freepik.com/free-photo/compass-near-old-maps_23-2147793492.jpg?w=826&t=st=1702027206~exp=1702027806~hmac=3a4e2149fdcb655e119f0676db7fc5dec4e64ff08da1976dde14ff049f705c2e)]  bg-gradient-to-b from-transparent to-white'>
         <div className='font-[cursive] py-20 text-center'>
           <div>
             <h1 className='md:text-6xl text-4xl text-red-500'>Contact Us</h1>
@@ -12,7 +12,10 @@ const Contact = () => {
               feedback you may have.
             </p>
           </div>
-          <div className='mt-10 w-[90vw] md:max-w-3xl mx-auto'>
+          <div
+            data-aos='zoom-in'
+            className='mt-10 w-[90vw] md:max-w-3xl mx-auto'
+          >
             <form action=''>
               <div className='flex gap-4 items-center'>
                 <input
@@ -48,10 +51,10 @@ const Contact = () => {
         </div>
       </div>
       <div>
-<CustomerSupport/>
+        <CustomerSupport />
       </div>
       <div>
-        <Faq/>
+        <Faq />
       </div>
     </div>
   )

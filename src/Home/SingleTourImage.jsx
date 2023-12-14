@@ -12,7 +12,10 @@ const SingleTourImage = ({
 }) => {
   
   return (
-    <article  className='bg-white h-full border font-[cursive] text-center border-gray-200 w-full rounded-lg shadow'>
+    <article
+      data-aos='zoom-in'
+      className='bg-white h-full border font-[cursive] text-center border-gray-200 w-full rounded-lg shadow'
+    >
       <div>
         <NavLink to={to}>
           <img
@@ -32,29 +35,28 @@ const SingleTourImage = ({
             {desc}
           </p>
         </div>
-        
-          <div className='pt-16   aspect-[1/0.5]'>
-            <div className='flex justify-between items-center px-4'>
-              <h1 className='text-gray-400 font-normal'>Duration:</h1>
-              <span>{time} days</span>
-            </div>
-            <div className='flex justify-between items-center px-4'>
-              <h1 className='text-gray-400 font-normal'>Departure:</h1>
-              <span className='capitalize'>{date}</span>
-            </div>
-            <div className='flex justify-between items-start px-4'>
-              <h1 className='text-gray-400 font-normal'>Price:</h1>
-              <span className='text-red-500 '>
-                <del className='block'>{price2}</del>${price}/person
-              </span>
-            </div>
+
+        <div className='pt-16   aspect-[1/0.5]'>
+          <div className='flex justify-between items-center px-4'>
+            <h1 className='text-gray-400 font-normal'>Duration:</h1>
+            <span>{time} days</span>
           </div>
-          <div>
-            <button className='bg-red-500 pt-1hover:bg-white hover:text-red-500 border-red-500 px-5 py-2 mt-7 w-full text-white text-2xl rounded-3xl border text-center'>
-              Book Now
-            </button>
+          <div className='flex justify-between items-center px-4'>
+            <h1 className='text-gray-400 font-normal'>Departure:</h1>
+            <span className='capitalize'>{date}</span>
           </div>
-        
+          <div className='flex justify-between items-start px-4'>
+            <h1 className='text-gray-400 font-normal'>Price:</h1>
+            <span className='text-red-500 '>
+              <del className='block'>{price2}</del>${price}/person
+            </span>
+          </div>
+        </div>
+        <div>
+          <button className='bg-red-500 pt-1hover:bg-white hover:text-red-500 border-red-500 px-5 py-2 mt-7 w-full text-white text-2xl rounded-3xl border text-center'>
+            Book Now
+          </button>
+        </div>
       </div>
     </article>
   )

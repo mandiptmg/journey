@@ -5,6 +5,7 @@ const data = [
     desc: 'celandic Adventure: A Journey through Fire and Ice',
     time: 7,
     price: 3000,
+    aos: 'zoom-in',
     price2: '3500/person',
     date: 'june 11',
     tourDetail:
@@ -87,6 +88,7 @@ const data = [
     desc: 'Norwegian Fjords & Northern Wonders',
     time: 10,
     price: 4000,
+    aos: 'fade-right',
     date: 'june 20',
     visit: 'Norwegian-Fjords',
     to: '/Norwegian-Fjords',
@@ -187,6 +189,7 @@ const data = [
     img: 'https://img.freepik.com/free-photo/set-colored-balloons-flying-ground-cappadocia-turkey_181624-20938.jpg?w=826&t=st=1701757856~exp=1701758456~hmac=4984495ba2396e7e1c5412f082f84701fb1420b0284a06e2349da1d1843aa2aa',
     desc: 'Turkish Delights: From Istanbul to Cappadocia',
     time: 10,
+    aos: 'fade-left',
     price: 4000,
     price2: '$4500/person',
     visit: 'Turkish-Delights',
@@ -290,10 +293,10 @@ const data = [
     time: 10,
     price: 4000,
     date: 'july 25',
+    aos: 'fade-left',
     visit: 'Swiss-Splendor',
     to: '/Swiss-Splendor',
-    
-    
+
     tourDetail:
       'Discover the breathtaking landscapes, charming cities, and rich culture of Switzerland on a 10-day journey. From the majestic Swiss Alps to the serene lakeside towns, this tour offers a perfect blend of natural beauty and cultural experiences.',
     locationsArray: [
@@ -398,6 +401,8 @@ const data = [
     price: 3900,
     price2: '$4300/person',
     date: 'may 6',
+    aos: 'zoom-in',
+
     visit: 'Discover-Germany',
     to: '/Discover-Germany',
     tourDetail:
@@ -480,18 +485,19 @@ const data = [
         activities: ['Bid farewell to Germany', 'Depart from Frankfurt'],
       },
     ],
-    imageUrls:[
-    'https://framerusercontent.com/images/ZDXZM16X4IBrkQhnuiYUzMHgOBQ.jpg?scale-down-to=1024',
-    'https://framerusercontent.com/images/zyg3uCzHjgZRs8u0KJioMZST3o.jpg?scale-down-to=1024',
-    'https://framerusercontent.com/images/lJjW6bJSeJAB6eBJY2dCHLO5Lc.jpg?scale-down-to=1024',
-    // Add more image URLs as needed
-  ],
+    imageUrls: [
+      'https://framerusercontent.com/images/ZDXZM16X4IBrkQhnuiYUzMHgOBQ.jpg?scale-down-to=1024',
+      'https://framerusercontent.com/images/zyg3uCzHjgZRs8u0KJioMZST3o.jpg?scale-down-to=1024',
+      'https://framerusercontent.com/images/lJjW6bJSeJAB6eBJY2dCHLO5Lc.jpg?scale-down-to=1024',
+      // Add more image URLs as needed
+    ],
   },
   {
     country: 'Sweden',
     img: 'https://framerusercontent.com/images/krdf72mAsgPibgQSEijtygqdXk.jpg?scale-down-to=2048',
     desc: 'Sweden: Land of Endless Adventures',
     time: 10,
+    aos: 'fade-left',
     price: 4200,
     date: 'july 20',
     visit: 'Sweden-adventures',
@@ -582,12 +588,12 @@ const data = [
         activities: ['Bid farewell to Sweden', 'Depart from Luleå'],
       },
     ],
-    imageUrls : [
-    'https://framerusercontent.com/images/8VO21G6HqaDMjiGvqay6lTq3UUE.jpg?scale-down-to=1024',
-    'https://framerusercontent.com/images/TBawzRD4OvWzLXZTsshnsweHID0.jpg?scale-down-to=1024',
-    'https://framerusercontent.com/images/J3BHzDmaO9BLvphzSQbJydQ2pb4.jpg?scale-down-to=1024',
-    // Add more image URLs as needed
-  ],
+    imageUrls: [
+      'https://framerusercontent.com/images/8VO21G6HqaDMjiGvqay6lTq3UUE.jpg?scale-down-to=1024',
+      'https://framerusercontent.com/images/TBawzRD4OvWzLXZTsshnsweHID0.jpg?scale-down-to=1024',
+      'https://framerusercontent.com/images/J3BHzDmaO9BLvphzSQbJydQ2pb4.jpg?scale-down-to=1024',
+      // Add more image URLs as needed
+    ],
   },
 ]
 

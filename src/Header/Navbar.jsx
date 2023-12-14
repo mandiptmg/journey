@@ -27,7 +27,7 @@ const Navbar = () => {
   window.addEventListener('scroll',handleChange)
   },[])
   return (
-    <div
+    <div data-aos='zoom-in' data-aos-delay='1100'
       className={
         navbar ? 'sticky duration-500  shadow-2xl z-20 top-0 bg-white' : 'sticky z-10'
       }

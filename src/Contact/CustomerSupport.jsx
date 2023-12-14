@@ -7,7 +7,7 @@ const CustomerSupport = () =>
     <div className='bg-white pt-20  pb-1 text-black'>
       <div className='w-[90vw] md:w-[80vw] mx-auto'>
         <div className='grid md:grid-cols-2 gap-10  font-[cursive] items-start'>
-          <div>
+          <div data-aos='zoom-in'>
             <h1 className='md:text-3xl text-xl text-center md:text-left  text-red-600'>
               Customer Support
             </h1>
@@ -24,7 +24,7 @@ const CustomerSupport = () =>
               </li>
             </ul>
           </div>
-          <div>
+          <div data-aos='zoom-in'>
             <h1 className='md:text-3xl text-xl text-center md:text-left  text-red-600'>
               General Inquiries
             </h1>
@@ -43,7 +43,7 @@ const CustomerSupport = () =>
           </div>
         </div>
         <div className='mt-32 font-[cursive] text-center'>
-          <div>
+          <div data-aos='zoom-in'>
             <h1 className='md:text-3xl text-xl   text-red-600'>
               Connect with Us on Social Media
             </h1>
@@ -53,7 +53,7 @@ const CustomerSupport = () =>
             </p>
           </div>
           <div className='p-6 shadow-red-200 font-medium shadow-md md:max-w-xl max-w-[10em]  mt-10 mx-auto rounded-3xl  border'>
-            <ul className='text-xl md:flex  items-center grid  gap-y-10 gap-x-8'>
+            <ul data-aos='zoom-in' className='text-xl md:flex  items-center grid  gap-y-10 gap-x-8'>
               <li>
                 <a
                   className='flex gap-4 text-black hover:text-red-600 items-center'
@@ -95,10 +95,9 @@ const CustomerSupport = () =>
         </div>
       </div>
       <div className='border mt-24  shadow shadow-red-200 '>
-        <div className='text-center py-24 max-w-2xl mx-auto font-[cursive]'>
+        <div>
           <div>
-           
-           <NewsLetter/> 
+            <NewsLetter />
           </div>
         </div>
       </div>

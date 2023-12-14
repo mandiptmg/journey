@@ -12,7 +12,7 @@ const Services = () => {
         </p>
       </div>
       <div className='mt-7 grid gap-y-20 gap-x-32 md:grid-cols-2 items-start'>
-        <div className='w-full h-full'>
+        <div data-aos='zoom-in' className='w-full h-full'>
           <img
             src='https://framerusercontent.com/images/TkJYgQeDFbWw4yNLf3UtAnkhDOw.jpg?scale-down-to=512'
             alt=''
@@ -26,7 +26,7 @@ const Services = () => {
             types of accommodations based on traveler preferences and budgets.
           </p>
         </div>
-        <div className='w-full h-full'>
+        <div data-aos='zoom-in' className='w-full h-full'>
           <img
             src='https://framerusercontent.com/images/gxziWKvcRwbZ4rxSBNv9xoQrc4s.jpg'
             alt=''
@@ -43,7 +43,7 @@ const Services = () => {
             transfers, and other transportation options for travelers.
           </p>
         </div>
-        <div className='w-full h-full'>
+        <div data-aos='zoom-in' className='w-full h-full'>
           <img
             src='https://framerusercontent.com/images/XdYqhLidcD9iYSDdSTZbsCZMfY.jpg?scale-down-to=1024'
             alt=''
@@ -60,7 +60,10 @@ const Services = () => {
             and day trips to popular attractions and destinations.
           </p>
         </div>
-        <div className='w-full shadow-lg rounded-3xl grid place-items-center shadow-red-200 h-full'>
+        <div
+          data-aos='zoom-in'
+          className='w-full shadow-lg rounded-3xl grid place-items-center shadow-red-200 h-full'
+        >
           <div className='w-full text-center px-10'>
             <h1 className='text-xl text-gray-400 '>
               Visit our tours and find your next journey{' '}
