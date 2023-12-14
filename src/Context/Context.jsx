@@ -1,12 +1,15 @@
 import { useContext, useState, createContext, useEffect, useRef } from 'react'
-
+import data from '../assets/Data/Data'
 const AppContext = createContext()
 export const AppProvider = ({ children }) => {
   const [backgroundImage, setBackgroundImage] = useState({
-    country: 'iceland',
-    img: 'https://res.cloudinary.com/icelandtours/g_auto,f_auto,c_fill,w_3840,q_auto:best/flatey_island_summer_e2506cca1c.jpg',
+    country: data[0].country ,
+    img:data[0].img ,
   })
   const [showModal, setShowModal] = useState(false)
+  const [activeButton, setActiveButton] = useState(data[0].country)
+
+
   let showRef = useRef()
 
   useEffect(() => {
@@ -28,6 +31,8 @@ export const AppProvider = ({ children }) => {
         showModal,
         setShowModal,
         showRef,
+      activeButton,
+      setActiveButton
       }}
     >
       {children}

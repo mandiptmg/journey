@@ -1,21 +1,34 @@
 import { useState } from 'react'
 import { useGlobalContext } from '../Context/Context'
+import { NavLink } from 'react-router-dom'
 
-const SingleImage = ({ img, country }) => {
+const SingleImage = ({ img, country, to }) => {
   const [show, setShow] = useState(true)
-  const { setBackgroundImage } = useGlobalContext()
+  const { setBackgroundImage, backgroundImage,setActiveButton,activeButton} = useGlobalContext()
   return (
     <div>
-      <article className='relative'>
+      <div
+        className={activeButton === country? 'text-center relative bg-white rounded-3xl p-5' : 'hidden'}
+      >
+        <NavLink
+          className='text-red-500 text-xl  font-bold'
+          to={backgroundImage.to}
+        >
+          <button className='capitalize'>view image</button>
+        </NavLink>
+      </div>
+      <article className={activeButton === country ? 'hidden':'relative'}>
         <button
           onMouseEnter={() => setShow(false)}
           onMouseLeave={() => setShow(true)}
-          onClick={() =>
+          onClick={() => {
             setBackgroundImage({
               img: img,
               country: country,
+              to: to,
             })
-          }
+            setActiveButton(country)
+          }}
         >
           <img
             src={img}

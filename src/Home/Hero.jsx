@@ -1,4 +1,3 @@
-import React from 'react'
 import data from '../assets/Data/Data'
 import { useGlobalContext } from '../Context/Context'
 import SingleImage from './SingleImage'
@@ -31,6 +30,7 @@ const Hero = () => {
                 key={index}
                 img={location.img}
                 country={location.country}
+                to={location.to}
               />
             ))}
           </div>
