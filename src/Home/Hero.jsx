@@ -2,7 +2,6 @@ import data from '../assets/Data/Data'
 import { useGlobalContext } from '../Context/Context'
 import SingleImage from './SingleImage'
 
-
 const Hero = () => {
   const { backgroundImage } = useGlobalContext()
 
@@ -18,12 +17,11 @@ const Hero = () => {
       >
         <div className='w-[90vw] mx-auto'>
           <div className='text-center pt-20'>
-              <div  data-aos={backgroundImage.aos} data-aos-delay='1100'>
-
-            <h1 className='text-5xl sm:text-7xl md:text-[180px] capitalize font-bold tracking-widest font-[Kalam,sans-serif] opacity-60'>
+            <div data-aos={backgroundImage.aos} data-aos-delay='1100'>
+              <h1 className='text-5xl sm:text-7xl md:text-[180px] capitalize font-bold tracking-widest font-[Kalam,sans-serif] opacity-60'>
                 {backgroundImage.country}
-             
-            </h1> </div>
+              </h1>{' '}
+            </div>
             <h1 className='text-center font-[cursive] font-bold text-white text-3xl md:text-6xl capitalize py-12'>
               <span data-aos='zoom-in' data-aos-delay='400'>
                 {' '}
