@@ -18,8 +18,8 @@ const Hero = () => {
       >
         <div className='w-[90vw] mx-auto'>
           <div className='text-center pt-20'>
-            <h1 className='text-2xl md:text-[180px] capitalize font-bold tracking-widest font-[Kalam,sans-serif] opacity-60'>
-              <span data-aos={backgroundImage.aos} data-aos-delay='1100'>
+            <h1 className='md:text-[180px] capitalize font-bold tracking-widest font-[Kalam,sans-serif] opacity-60'>
+              <span className='text-5xl' data-aos={backgroundImage.aos} data-aos-delay='1100'>
                 {backgroundImage.country}
               </span>
             </h1>
