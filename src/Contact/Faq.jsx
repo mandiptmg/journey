@@ -28,7 +28,7 @@ const Faq = () => {
         <h1 className='text-3xl font-bold md:text-4xl text-red-500 '>FAQ</h1>
         <p className='text-sm mt-4 md:text-base '>Frequently Asked Questions</p>
       </div>
-      <div className='max-w-xl md:max-w-5xl mx-auto'>
+      <div className='w-[90vw] sm:max-w-xl  md:max-w-5xl mx-auto'>
         {data.map((item, index) => {
           return <SingleQuestion key={index} {...item}></SingleQuestion>
         })}
