@@ -1,4 +1,4 @@
-import { Routes, Route,  } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 
 import Navbar from './Header/Navbar'
 import Home from './Home/Home'
@@ -10,6 +10,11 @@ import SinglePage from './SinglePage/SinglePage'
 import data from './assets/Data/Data'
 import Modal from './Home/Modal'
 const App = () => {
+   const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
   return (
     <div>
       <Navbar />
