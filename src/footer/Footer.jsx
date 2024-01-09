@@ -12,7 +12,7 @@ const Footer = () => {
                 <NavLink to='/'>Journey</NavLink>
               </button>
               <p className='pt-4 text-gray-400 font-[cursive]'>
-                &copy; Journey. All Rights Reserved 2023.
+                &copy; Journey. All Rights Reserved 2023.(Mandip Tamang)
               </p>
             </div>
             <div className='pt-14'>
